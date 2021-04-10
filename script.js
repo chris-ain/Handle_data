@@ -195,7 +195,7 @@ plane && plane.onLoading(function () {
     plane.uniforms.planeDeformation.value = planesDeformations;
 
     //plane.setScale(1, 1 + Math.abs(scrollEffect) / 500);
-    plane.textures[0].setScale(1 + Math.abs(scrollEffect) / 500);
+    plane.textures[0].setScale(new Vec2(1 + Math.abs(scrollEffect) / 500));
   });
 }
 
