@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
 
     // handle smooth scroll and update planes positions
     const smoothScroll = new LocomotiveScroll({
-        el: document.getElementById('page-content'),
+        el: document.getElementByClassName('.smooth-scroll'),
         smooth: true,
         inertia: 0.5,
         passive: true,
