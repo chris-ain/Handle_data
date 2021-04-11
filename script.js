@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
 
 
     // get our planes elements
-    const planeElements = document.getElementsByClassName("plane");
+    const planeElements = document.getElementsByClassName("planetwo");
 
     // handle smooth scroll and update planes positions
     const smoothScroll = new LocomotiveScroll({
