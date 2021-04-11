@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
 
     // set up our WebGL context and append the canvas to our wrapper
     const curtains = new Curtains({
-        container: "canvastwo",
+        container: "canvas",
         watchScroll: useNativeScroll, // watch scroll on mobile not on desktop since we're using locomotive scroll
         pixelRatio: Math.min(1.5, window.devicePixelRatio) // limit pixel ratio for performance
     });
