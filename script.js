@@ -113,7 +113,7 @@ window.addEventListener("load", () => {
         vec3 vertexPosition = aVertexPosition;
 
         // cool effect on scroll
-        vertexPosition.x -= sin(((vertexPosition.y + 1.0) / 2.0) * 3.141592) * (sin(uPlaneDeformation / 50.0));
+        vertexPosition.y += sin(((vertexPosition.x + 1.0) / 2.0) * 3.141592) * (sin(uPlaneDeformation / 100.0));
 
         gl_Position = uPMatrix * uMVMatrix * vec4(vertexPosition, 1.0);
 
@@ -212,7 +212,7 @@ plane && plane.onLoading(function () {
     void main() {
         vec2 textureCoords = vTextureCoord;
 
-        vec2 redTextCoords = vec2(vTextureCoord.x, vTextureCoord.y - uScrollEffect / 500.0);
+        vec2 redTextCoords = vec2(vTextureCoord.x, vTextureCoord.y - uScrollEffect / 400.0);
         vec2 greenTextCoords = vec2(vTextureCoord.x, vTextureCoord.y - uScrollEffect / 3000.0);
         vec2 blueTextCoords = vec2(vTextureCoord.x, vTextureCoord.y - uScrollEffect / 3000.0);
 
